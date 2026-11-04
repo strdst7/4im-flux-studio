@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Live studio
+    url: https://4im-flux.vercel.app
+    about: Try the current build before filing — the bug may already be fixed.
+  - name: Question or idea
+    url: https://github.com/strdst7/4im-flux-studio/discussions
+    about: For open-ended questions, show-and-tell, and preset sharing.
+  - name: Security issue
+    url: https://github.com/strdst7/4im-flux-studio/security/advisories/new
+    about: Please report vulnerabilities privately, not as a public issue.

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="4IM/Flux — a real-time GPU fluid playground">
+  <defs>
+    <radialGradient id="plumeA" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#e7d6b0" stop-opacity="0.85" />
+      <stop offset="0.55" stop-color="#c8a96a" stop-opacity="0.35" />
+      <stop offset="1" stop-color="#c8a96a" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="plumeB" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#c8a96a" stop-opacity="0.55" />
+      <stop offset="0.6" stop-color="#8a6f3c" stop-opacity="0.22" />
+      <stop offset="1" stop-color="#8a6f3c" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="rule" x1="0" x2="1">
+      <stop offset="0" stop-color="#c8a96a" stop-opacity="0" />
+      <stop offset="0.5" stop-color="#c8a96a" stop-opacity="0.55" />
+      <stop offset="1" stop-color="#c8a96a" stop-opacity="0" />
+    </linearGradient>
+    <filter id="blurA" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="34" />
+    </filter>
+    <filter id="blurB" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="18" />
+    </filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="7" />
+      <feColorMatrix type="saturate" values="0" />
+      <feComponentTransfer><feFuncA type="linear" slope="0.06" /></feComponentTransfer>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="320" fill="#07070a" />
+
+  <!-- dye plumes: layered blurred ellipses, the same gold window the house presets use -->
+  <g filter="url(#blurA)" opacity="0.9">
+    <ellipse cx="300" cy="250" rx="260" ry="120" fill="url(#plumeA)" />
+    <ellipse cx="620" cy="200" rx="300" ry="130" fill="url(#plumeB)" />
+    <ellipse cx="980" cy="240" rx="240" ry="110" fill="url(#plumeA)" />
+  </g>
+  <g filter="url(#blurB)" opacity="0.75">
+    <ellipse cx="430" cy="180" rx="150" ry="70" fill="url(#plumeA)" />
+    <ellipse cx="780" cy="150" rx="180" ry="80" fill="url(#plumeB)" />
+  </g>
+
+  <!-- fine filaments, drawn as strokes so they read as advected dye not blur -->
+  <g fill="none" stroke-linecap="round" opacity="0.5">
+    <path d="M120 250 C 260 200, 340 300, 500 240 S 760 170, 900 230" stroke="#e7d6b0" stroke-width="1.4" opacity="0.55" />
+    <path d="M180 275 C 320 235, 400 320, 560 265 S 800 205, 1010 255" stroke="#c8a96a" stroke-width="1.1" opacity="0.45" />
+    <path d="M60 215 C 200 175, 300 255, 460 200 S 720 130, 880 190" stroke="#c8a96a" stroke-width="0.9" opacity="0.32" />
+  </g>
+
+  <rect width="1200" height="320" filter="url(#grain)" opacity="0.5" />
+
+  <!-- type block -->
+  <text x="72" y="118" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif"
+        font-size="11" letter-spacing="6.2" fill="#c8a96a" opacity="0.78">MI4 INC.</text>
+
+  <text x="68" y="200" font-family="Georgia, 'Times New Roman', serif" font-size="82"
+        font-weight="300" letter-spacing="-1.6" fill="#f3eee6">4IM/Flux</text>
+
+  <text x="72" y="238" font-family="Georgia, 'Times New Roman', serif" font-size="19"
+        font-style="italic" fill="#8a8578">A real-time GPU fluid playground.</text>
+
+  <rect x="72" y="262" width="420" height="1" fill="url(#rule)" />
+
+  <text x="72" y="288" font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
+        font-size="10.5" letter-spacing="1.6" fill="#8a8578" opacity="0.85">98 PRESETS · 24 FAMILIES · GPGPU PARTICLES · MIT SOLVER</text>
+</svg>

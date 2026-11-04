@@ -1,0 +1,40 @@
+{
+  "name": "@4im/fluid",
+  "version": "1.0.0",
+  "description": "The 4IM/Flux solver \u2014 a WebGL fluid simulation core, typed config, preset library and validation.",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./presets": {
+      "types": "./dist/presets/index.d.ts",
+      "import": "./dist/presets/index.js"
+    },
+    "./core": "./src/core/fluid.core.js",
+    "./source": "./src/index.ts",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "core",
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json && node scripts/copy-core.mjs",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "core": "node core/build-core.mjs"
+  },
+  "keywords": [
+    "webgl",
+    "fluid",
+    "gpgpu",
+    "simulation",
+    "presets"
+  ]
+}

@@ -1,0 +1,11 @@
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.webp binary
+*.mp4 binary
+*.webm binary
+
+packages/fluid/core/fluid.core.js linguist-generated=true
+packages/fluid/core/script.js linguist-vendored=true
+packages/fluid/core/LICENSE linguist-vendored=true

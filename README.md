@@ -8,7 +8,7 @@
   <a href="https://github.com/strdst7/4im-flux-studio/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/strdst7/4im-flux-studio/actions/workflows/ci.yml/badge.svg" /></a>
   <a href="https://github.com/strdst7/4im-flux-studio/actions/workflows/codeql.yml"><img alt="CodeQL" src="https://github.com/strdst7/4im-flux-studio/actions/workflows/codeql.yml/badge.svg" /></a>
   <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-c8a96a.svg" /></a>
-  <img alt="Node" src="https://img.shields.io/badge/node-%E2%89%A520.11-c8a96a" />
+  <img alt="Node" src="https://img.shields.io/badge/node-%E2%89%A522.18-c8a96a" />
   <img alt="Tests" src="https://img.shields.io/badge/tests-55%20passing-c8a96a" />
   <img alt="Presets" src="https://img.shields.io/badge/presets-98-c8a96a" />
   <img alt="Dependencies" src="https://img.shields.io/badge/runtime%20deps-0-c8a96a" />
@@ -42,7 +42,7 @@ npm test         # 55 tests, no browser needed
 npm run flux     # the preset CLI
 ```
 
-Requires Node ≥ 20.11. No runtime dependencies outside React and Next — the CLI
+Requires Node ≥ 22.18 (the tests run as TypeScript via native type stripping). No runtime dependencies outside React and Next — the CLI
 is stdlib-only.
 
 ## What is in the box

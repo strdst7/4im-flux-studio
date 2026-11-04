@@ -14,7 +14,7 @@ npm run dev      # studio on :3000
 npm test         # node:test, no browser required
 ```
 
-Node ≥ 20.11. There is no linter to install and nothing to configure.
+Node ≥ 22.18 — the tests run as TypeScript directly, no build step. There is no linter to install and nothing to configure.
 
 ## Where things live
 

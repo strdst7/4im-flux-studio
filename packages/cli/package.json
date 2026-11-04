@@ -1,7 +1,7 @@
 {
   "name": "@4im/flux-cli",
   "version": "1.0.0",
-  "description": "The `flux` command — inspect, validate and export 4IM/Flux presets from a terminal.",
+  "description": "The `flux` command \u2014 inspect, validate and export 4IM/Flux presets from a terminal.",
   "license": "MIT",
   "type": "module",
   "bin": {
@@ -18,6 +18,6 @@
     "@4im/fluid": "1.0.0"
   },
   "engines": {
-    "node": ">=20.11"
+    "node": ">=22.18"
   }
 }

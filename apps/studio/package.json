@@ -2,7 +2,7 @@
   "name": "@4im/studio",
   "version": "1.0.0",
   "private": true,
-  "description": "The 4IM/Flux studio \u2014 one route, one canvas, every control exposed.",
+  "description": "The 4IM/Flux studio — one route, one canvas, every control exposed.",
   "type": "module",
   "scripts": {
     "dev": "next dev",
@@ -17,7 +17,7 @@
     "react-dom": "19.3.1"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
+    "@tailwindcss/postcss": "^4.3.5",
     "@types/node": "^26.6.6",
     "@types/react": "^19",
     "@types/react-dom": "^19",
